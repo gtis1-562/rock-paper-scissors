@@ -7,14 +7,20 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="score">
+        <h1 id="fiveGames"></h1>
+    </div>
+    <button id="rst">Reset Game</button>
     <div id="container">
-        <h1>Results</h1>
+        <h1>Game: <span id="gameCount">0</span>/5</h1>
         <div id="inner">
             <div class="choice-boxes">
+                <p>wins: <span id="computerScore">0</span></p>
                 <h3>Computers Choice: </h3>
                 <span id="computerOutput"></span>
             </div>
             <div class="choice-boxes">
+                <p>wins: <span id="playerScore">0</span></p>
                 <h3>My Choice: </h3>
                 <span id="my-choice"></span>
             </div>
@@ -24,7 +30,10 @@
             <button id="paper" class="button">paper</button>
             <button id="scissors" class="button">scissors</button>
         </di>
-        
+        <div id="resultDiv">
+            <h4>Result</h4>
+            <span id="result"></span>
+        </div>
         
     </div>
     
